@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>JS+CSS制作的定时文字切换效果 - www.webdm.cn</TITLE>
+<style type="text/css">
+ 
+ #contain{
+font-size:12px;overflow:hidden;list-style:none;width:288px;height:30px;margin:0px;padding:0;
+ }
+.333{
+    height:30px;
+    line-height:22px;
+    white-space:nowrap;
+    overflow:hidden;
+    background-color: #0C6;
+ }
+</style>
+ <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</HEAD>
+ 
+ <BODY>
+ 
+  <div id="contain">
+   <div class="333">百度，世界最大的中文搜索引擎</div>
+   <div class="333"><a href="http://www.csdn.net">CSDN，中国最聚人气的IT技术社区</a></div>
+   <div class="333"><a href="http://www.webdm.cn">网页代码站，最有质量的代码下载站</a></div>
+   <div class="333"><a href="http://www.sina.com">新浪，中国第一门户网站</a></div>
+  </div>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+function xx(){
+var container=document.getElementById("contain");
+container.appendChild(container.firstChild);
+}
+setInterval("xx()",300);
+</SCRIPT>
+ </BODY>
+</HTML>
